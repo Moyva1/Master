@@ -1,0 +1,136 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.InfoGainAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     9-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C43-Llast-weka.filters.unsupervised.attribute.Remove-R43-44-weka.filters.unsupervised.instance.RemoveDuplicates-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.instance.RemovePercentage-P40.0-weka.filters.supervised.instance.SMOTE-C7-K5-P72510.0-S1-weka.filters.supervised.instance.SMOTE-C6-K5-P21256.0-S1-weka.filters.supervised.instance.SMOTE-C5-K5-P8864.2-S1-weka.filters.supervised.instance.SMOTE-C4-K5-P12206.8-S1-weka.filters.supervised.instance.SMOTE-C3-K5-P243.15-S1-weka.filters.supervised.instance.SMOTE-C1-K5-P14719.0-S1-weka.filters.supervised.instance.Resample-B0.0-S1-Z6.89
+Instances:    3500
+Attributes:   113
+              [list of attributes omitted]
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 113  AttackType):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 2.54592    76  src_bytes
+ 1.59746    94  count
+ 1.46362   107  dst_host_same_src_port_rate
+ 1.45444    77  dst_bytes
+ 1.41768    95  srv_count
+ 1.31715   103  dst_host_count
+ 1.23304   104  dst_host_srv_count
+ 1.16495   110  dst_host_srv_serror_rate
+ 1.15669   106  dst_host_diff_srv_rate
+ 1.13965   109  dst_host_serror_rate
+ 1.12316    79  wrong_fragment
+ 0.99601   105  dst_host_same_srv_rate
+ 0.9896     81  hot
+ 0.92773     3  protocol_type=tcp
+ 0.86052     2  protocol_type=icmp
+ 0.85636     5  service=ecr_i
+ 0.85138     7  service=private
+ 0.83261    17  service=telnet
+ 0.8303     68  flag=SF
+ 0.73711    83  logged_in
+ 0.63283    97  srv_error_rate
+ 0.63051    96  serror_rate
+ 0.62099   111  dst_host_rerror_rate
+ 0.60245   112  dst_host_srv_rerror_rate
+ 0.59389   101  diff_srv_rate
+ 0.59167    70  flag=S0
+ 0.59167   100  same_srv_rate
+ 0.59167    82  num_failed_logins
+ 0.56719    99  srv_rerror_rate
+ 0.56467    98  rerror_rate
+ 0.56187     4  protocol_type=udp
+ 0.55714    72  flag=RSTO
+ 0.52498   108  dst_host_srv_diff_host_rate
+ 0.46708     1 duration
+ 0.46511    84  num_compromised
+ 0.42103     6  service=http
+ 0.37269    85  root_shell
+ 0.37137    88  num_file_creations
+ 0.34958   102  srv_diff_host_rate
+ 0.24534    12  service=ftp_data
+ 0.08935    87  num_root
+ 0.036      74  flag=RSTR
+ 0.03101    10  service=domain_u
+ 0.03018     9  service=smtp
+ 0.02686    69  flag=REJ
+ 0.02356    75  flag=S3
+ 0.01537    66  service=tim_i
+ 0.00563    90  num_access_files
+ 0.00483    62  service=netbios_dgm
+ 0.00483    28  service=login
+ 0.00402    46  service=csnet_ns
+ 0          23  service=finger
+ 0          20  service=ftp
+ 0          25  service=ntp_u
+ 0          22  service=netstat
+ 0          24  service=time
+ 0          27  service=courier
+ 0          26  service=other
+ 0          29  service=ctf
+ 0          30  service=systat
+ 0          31  service=mtp
+ 0          32  service=name
+ 0          21  service=pop_2
+ 0          78  land
+ 0          19  service=iso_tsap
+ 0          91  num_outbound_cmds
+ 0           8  service=auth
+ 0          92  is_host_login
+ 0          18  service=eco_i
+ 0          93  is_guest_login
+ 0          11  service=pop_3
+ 0          13  service=http_443
+ 0          34  service=shell
+ 0          14  service=nntp
+ 0          89  num_shells
+ 0          16  service=gopher
+ 0          15  service=Z39_50
+ 0          33  service=sql_net
+ 0          39  service=urh_i
+ 0          35  service=bgp
+ 0          53  service=discard
+ 0          60  service=ldap
+ 0          59  service=vmnet
+ 0          58  service=IRC
+ 0          57  service=supdup
+ 0          55  service=echo
+ 0          61  service=nnsp
+ 0          63  service=ssh
+ 0          64  service=kshell
+ 0          71  flag=S1
+ 0          73  flag=S2
+ 0          86  su_attempted
+ 0          65  service=X11
+ 0          67  service=red_i
+ 0          54  service=urp_i
+ 0          52  service=netbios_ns
+ 0          36  service=klogin
+ 0          51  service=uucp
+ 0          41  service=link
+ 0          40  service=domain
+ 0          80  urgent
+ 0          38  service=efs
+ 0          37  service=uucp_path
+ 0          42  service=netbios_ssn
+ 0          43  service=whois
+ 0          44  service=rje
+ 0          49  service=daytime
+ 0          50  service=hostnames
+ 0          48  service=remote_job
+ 0          45  service=printer
+ 0          47  service=sunrpc
+ 0          56  service=exec
+
+Selected attributes: 76,94,107,77,95,103,104,110,106,109,79,105,81,3,2,5,7,17,68,83,97,96,111,112,101,70,100,82,99,98,4,72,108,1,84,6,85,88,102,12,87,74,10,9,69,75,66,90,62,28,46,23,20,25,22,24,27,26,29,30,31,32,21,78,19,91,8,92,18,93,11,13,34,14,89,16,15,33,39,35,53,60,59,58,57,55,61,63,64,71,73,86,65,67,54,52,36,51,41,40,80,38,37,42,43,44,49,50,48,45,47,56 : 112
+
